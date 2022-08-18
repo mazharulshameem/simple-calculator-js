@@ -8,31 +8,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <form class="calculator" name="calc">
-      <input type="text" class="value" readonly name="text">
-      <span class="num clear" onclick="calc.text.value = ''"><i>C</i></span>
-      <span class="num" onclick="calc.text.value = ''"><i>DEL</i></span>
-      <span class="num  devided" onclick="calc.text.value += '/'"><i>/</i></span>
-      <span class="num multiply" onclick="calc.text.value += '*'"><i>*</i></span>
-      <span class="num" onclick="calc.text.value += '7'"><i>7</i></span>
-      <span class="num" onclick="calc.text.value += '8'"><i>8</i></span>
-      <span class="num" onclick="calc.text.value += '9'"><i>9</i></span>
-      <span class="num minus" onclick="calc.text.value += '-'"><i>-</i></span>
-      <span class="num" onclick="calc.text.value += '4'"><i>4</i></span>
-      <span class="num" onclick="calc.text.value += '5'"><i>5</i></span>
-      <span class="num" onclick="calc.text.value += '6'"><i>6</i></span>
-      <span class="num plus" onclick="calc.text.value += '+'"><i>+</i></span>
-      <span class="num" onclick="calc.text.value += '1'"><i>1</i></span>
-      <span class="num" onclick="calc.text.value += '2'"><i>2</i></span>
-      <span class="num" onclick="calc.text.value += '3'"><i>3</i></span>
-      <span class="num reminder" onclick="calc.text.value += '%'"><i>%</i></span>
-      <span class="num point" onclick="calc.text.value += '.'"><i>.</i></span>
-      <span class="num" onclick="calc.text.value += '0'"><i>0</i></span>
-
-      <span class="num equal" onclick="document.calc.text.value = eval(calc.text.value)"><i>=</i></span>
-    </form>
-
+  <div class="full-calculator">
+    <div class="container">
+      <form class="calculator" name="calc">
+        <input type="text" class="value" readonly name="text">
+        <span class="num clear" onclick="calc.text.value = ''"><i>C</i></span>
+        <span class="num" onclick="calc.text.value = ''"><i>DEL</i></span>
+        <span class="num  devided" onclick="calc.text.value += '/'"><i>/</i></span>
+        <span class="num multiply" onclick="calc.text.value += '*'"><i>*</i></span>
+        <span class="num" onclick="calc.text.value += '7'"><i>7</i></span>
+        <span class="num" onclick="calc.text.value += '8'"><i>8</i></span>
+        <span class="num" onclick="calc.text.value += '9'"><i>9</i></span>
+        <span class="num minus" onclick="calc.text.value += '-'"><i>-</i></span>
+        <span class="num" onclick="calc.text.value += '4'"><i>4</i></span>
+        <span class="num" onclick="calc.text.value += '5'"><i>5</i></span>
+        <span class="num" onclick="calc.text.value += '6'"><i>6</i></span>
+        <span class="num plus" onclick="calc.text.value += '+'"><i>+</i></span>
+        <span class="num" onclick="calc.text.value += '1'"><i>1</i></span>
+        <span class="num" onclick="calc.text.value += '2'"><i>2</i></span>
+        <span class="num" onclick="calc.text.value += '3'"><i>3</i></span>
+        <span class="num reminder" onclick="calc.text.value += '%'"><i>%</i></span>
+        <span class="num point" onclick="calc.text.value += '.'"><i>.</i></span>
+        <span class="num" onclick="calc.text.value += '0'"><i>0</i></span>
+  
+        <span class="num equal" onclick="document.calc.text.value = eval(calc.text.value)"><i>=</i></span>
+      </form>
+  
+    </div>
   </div>
 </body>
 </html>

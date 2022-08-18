@@ -5,7 +5,7 @@
   font-family: consolas;
 }
 body{
-  display: flex;
+  display:grid;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -30,7 +30,7 @@ body{
 .calculator .value{
   position: relative;
   grid-column: span 4;
-  height: 80px;
+  height: 70px;
   width: 100%;
   border: none;
   outline: none;
@@ -114,4 +114,11 @@ background:#FC766A;
 .calculator .point{
   background:#FC766A;
 } */
+@media only  screen and (max-width:576px) {
+ 
+  body{
+   width: 100%;
+   height: 50px;
+  }
 
+}
